@@ -116,7 +116,6 @@ body {
   font-family: 'Helvetica-Neue-Light', sans-serif;
 }
 
-ol,
-ul {
+ol {
   list-style: none;
 }

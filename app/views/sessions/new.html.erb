@@ -1,0 +1,23 @@
+<div class="border bg-light p-5">
+  <div class="bg-danger w-50 mx-auto p-2 text-center text-white">
+    <h3>Login Here</h3>
+  </div>
+  <div class="w-50 mx-auto card text-dark p-5">
+    <%= form_with model: @user, local: true do |f| %>
+      <%if @errors%>
+        <%@errors.each do |err|%>
+          <small class="text-danger"><%= err%></small><br>
+        <%end%>
+      <%end%>
+      <div class="form-group">
+        <%= f.label :Email %>
+        <%= f.text_field :email, class: 'form-control', placeholder: 'Email'%>
+      </div>
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.text_field :password, class: 'form-control', placeholder: 'password'%>
+      </div>
+      <button type="submit" class="btn btn-danger">Signin</button>
+    <% end %>
+  </div>
+</div>

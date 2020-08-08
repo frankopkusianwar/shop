@@ -3,10 +3,10 @@
         <div class="nav-content">
             <div class="header-logo d-flex"><%= image_tag "logo.PNG", class: "mt-2 mt-xl-0 mt-lg-0 mt-md-0", alt: "logo" %><h3 class="align-self-center m-xl-1 m-lg-1 m-md-1">ZATTIX</h3></div>
             <ul  class="nav-links">
-                <li class="home"><a href="#"><i class="fa fa-home mx-1 mx-xl-3 mx-lg-3 mx-md-3"></i>HOME</a></li>
+                <li class="home"><%= link_to 'HOME', root_path, class: 'ml-2' %></li>
                 <li class="d-flex nav-icon"><%= image_tag "colection_icon.PNG", class: "mx-xl-3 mx-lg-3 mx-md-3 mx-1 mt-0 mt-xl-1 mt-lg-1 mt-md-1", alt: "collection" %><a href="#" class="mt-xl-1 mt-lg-1 mt-md-1">COLLECTIONS</a></li>
             </ul>
-            <div class="d-none d-lg-flex profile"><i class="fa fa-envelope align-self-center mr-4"></i><%= link_to 'Login', '#', class: "align-self-center m-1 text-white" %><%= link_to 'Signup', new_user_path, class: "text-white align-self-center m-1" %></div>
+            <div class="d-none d-lg-flex profile"><i class="fa fa-envelope align-self-center mr-4"></i><%= link_to 'Login', new_session_path, class: "align-self-center m-1 text-white" %><%= link_to 'Signup', new_user_path, class: "text-white align-self-center m-1" %></div>
         </div>
     </nav>
     <nav class="d-block d-xl-none d-lg-none d-md-none nav">
