@@ -1,0 +1,39 @@
+<div class="border bg-light p-5">
+  <div class="bg-danger w-50 mx-auto p-2 text-center text-white">
+    <h3>Signup Here</h3>
+  </div>
+  <div class="w-50 mx-auto card text-dark p-5">
+    <%= form_with model: @user, local: true do |f| %>
+      <%if @errors%>
+        <%@errors.each do |err|%>
+          <small class="text-danger"><%= err%></small><br>
+        <%end%>
+      <%end%>
+      <div class="form-group">
+        <%= f.label :Name %>
+        <%= f.text_field :name, class: 'form-control', placeholder: 'Name'%>
+      </div>
+      <div class="form-group">
+        <%= f.label :Email %>
+        <%= f.text_field :email, class: 'form-control', placeholder: 'Email'%>
+      </div>
+      <div class="form-group">
+        <%= f.label :Contact %>
+        <%= f.phone_field :contact, class: 'form-control', placeholder: 'contact'%>
+      </div>
+      <div class="form-group">
+        <%= f.label :UserType %>
+        <%= f.text_field :userType, class: 'form-control', placeholder: 'User Type'%>
+      </div>
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.text_field :password, class: 'form-control', placeholder: 'password'%>
+      </div>
+      <div class="form-group">
+        <%= f.label :Confirmpassword %>
+        <%= f.text_field :confirmPassword, class: 'form-control', placeholder: 'Confirm Password'%>
+      </div>
+      <button type="submit" class="btn btn-danger">Create Acccount</button>
+    <% end %>
+  </div>
+</div>

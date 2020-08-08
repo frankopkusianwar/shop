@@ -6,7 +6,7 @@
                 <li class="home"><a href="#"><i class="fa fa-home mx-1 mx-xl-3 mx-lg-3 mx-md-3"></i>HOME</a></li>
                 <li class="d-flex nav-icon"><%= image_tag "colection_icon.PNG", class: "mx-xl-3 mx-lg-3 mx-md-3 mx-1 mt-0 mt-xl-1 mt-lg-1 mt-md-1", alt: "collection" %><a href="#" class="mt-xl-1 mt-lg-1 mt-md-1">COLLECTIONS</a></li>
             </ul>
-            <div class="d-none d-lg-flex profile"><i class="fa fa-envelope align-self-center mr-4"></i><%= link_to 'Login', '#', class: "align-self-center m-1 text-white" %><%= link_to 'Signup', '#', class: "text-white align-self-center m-1" %></div>
+            <div class="d-none d-lg-flex profile"><i class="fa fa-envelope align-self-center mr-4"></i><%= link_to 'Login', '#', class: "align-self-center m-1 text-white" %><%= link_to 'Signup', new_user_path, class: "text-white align-self-center m-1" %></div>
         </div>
     </nav>
     <nav class="d-block d-xl-none d-lg-none d-md-none nav">
@@ -21,19 +21,4 @@
             </div>
         </div>
     </nav>
-    <div class="header-content d-none d-md-block d-lg-block d-sm-block">
-        <h1>ZATTIX</h1>
-        <p class="mb-5">Buying And Selling farm equipment Couldn't be Simpler than this!</p>
-        <form action="#">
-            <select class="inpt-txt">
-                <option value="All Equipments">All Equipments</option>
-                <option value="Tractor">Tractor</option>
-                <option value="Garden tools">Garden tools</option>
-                <option value="Spraying Cans">Spraying Cans</option>
-              </select>
-            <input type="text" placeholder="What do you serach for?" class="pl-1 inpt-txt inpt-txt-spcl">
-            <input type="text" placeholder="Type" class="pl-1 inpt-txt inpt-txt-spcl">
-            <button class="btn-search" onclick="window.location.href = 'search.html';">Search</button>
-        </form>
-    </div>
 </header>
