@@ -6,7 +6,7 @@
                 <li class="home"><%= link_to 'HOME', root_path, class: 'ml-2' %></li>
                 <li class="d-flex nav-icon"><%= image_tag "colection_icon.PNG", class: "mx-xl-3 mx-lg-3 mx-md-3 mx-1 mt-0 mt-xl-1 mt-lg-1 mt-md-1", alt: "collection" %><a href="#" class="mt-xl-1 mt-lg-1 mt-md-1">COLLECTIONS</a></li>
             </ul>
-            <div class="d-none d-lg-flex profile"><i class="fa fa-envelope align-self-center mr-4"></i><%= link_to 'Logout', root_path, class: "text-white align-self-center m-1" %></div>
+            <div class="d-none d-lg-flex profile"><i class="fa fa-envelope align-self-center mr-4"></i><%= link_to 'Logout', logout_path, class: "text-white align-self-center m-1", method: :delete %></div>
         </div>
     </nav>
     <nav class="d-block d-xl-none d-lg-none d-md-none nav">
